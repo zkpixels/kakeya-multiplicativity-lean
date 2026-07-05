@@ -92,6 +92,12 @@ machine — one file at a time works on a laptop.
   enumeration the kernel checks (run with `python3 scripts/<name>.py`);
   these are sanity mirrors, not proof authority.
 
+## Citation
+
+This repository is the companion formalization of the post *A transfer
+principle for exact Kakeya minima over ℤ/N* —
+DOI: [10.5281/zenodo.21171390](https://doi.org/10.5281/zenodo.21171390).
+
 ## License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
