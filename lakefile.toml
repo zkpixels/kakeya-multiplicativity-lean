@@ -1,0 +1,10 @@
+name = "kakeya-multiplicativity"
+defaultTargets = ["Kakeya"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "360da6fa66c1273b76b6b2d8c5666fd5ac2e3b56"
+
+[[lean_lib]]
+name = "Kakeya"
