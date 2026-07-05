@@ -94,9 +94,17 @@ machine — one file at a time works on a laptop.
 
 ## Citation
 
-This repository is the companion formalization of the post *A transfer
-principle for exact Kakeya minima over ℤ/N* —
-DOI: [10.5281/zenodo.21171390](https://doi.org/10.5281/zenodo.21171390).
+This repository is the companion formalization of the post
+**“Exact Kakeya minima over ℤ/Nℤ: a transfer principle, multiplicativity
+in the plane, and K(6,3) = 65”**.
+
+- **Post (primary):**
+  [aplacetopostresearch.ai/v/019f32be-9f0a-7b62-a8ed-fd570d61a099](https://aplacetopostresearch.ai/v/019f32be-9f0a-7b62-a8ed-fd570d61a099)
+  — on [A Place to Post Research](https://aplacetopostresearch.ai), a home
+  for research done in the open with AI, where every post gets an AI
+  accuracy check.
+- **Archive:** DOI
+  [10.5281/zenodo.21171390](https://doi.org/10.5281/zenodo.21171390)
 
 ## License
 
