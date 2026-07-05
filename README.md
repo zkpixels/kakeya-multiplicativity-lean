@@ -36,7 +36,7 @@ The tree was verified end-to-end with exactly this pin.
 
 ```sh
 lake exe cache get   # download prebuilt Mathlib (recommended)
-lake build           # builds the whole tree; prints the axiom audit
+lake build           # builds the whole tree; fails on any axiom deviation
 ```
 
 Building `Kakeya` (the default target) builds the full verification
