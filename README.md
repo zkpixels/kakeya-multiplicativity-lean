@@ -39,9 +39,13 @@ lake exe cache get   # download prebuilt Mathlib (recommended)
 lake build           # builds the whole tree; prints the axiom audit
 ```
 
-Building `Kakeya` (the default target) elaborates every file and prints
-one `#print axioms` line per headline theorem; each must read exactly
-`[propext, Classical.choice, Quot.sound]`.
+Building `Kakeya` (the default target) builds the full verification
+tree — every proof-authority file at the repository root (`artifact/`
+is human-readable reference and is not imported). The axiom audit is a
+checked assertion, not a report: each headline theorem's `#print
+axioms` output is pinned with `#guard_msgs` to exactly
+`[propext, Classical.choice, Quot.sound]`, and the build FAILS on any
+deviation.
 
 **Resource guidance.** The proofs contain large kernel-checked
 enumerations (`decide +kernel`). Each file needs roughly **2–7 GB RAM**;
@@ -74,7 +78,8 @@ machine — one file at a time works on a laptop.
 - `P32BBase.lean`, `P33BK00..P48BK15`, `P50BFc.lean` — the 𝔽₂⁴ cell,
   same shape, yielding `minKakeyaSize_two_four'` and the ×6 dimension-4
   law.
-- `Kakeya.lean` — root target + build-time axiom audit.
+- `Kakeya.lean` — root target + build-failing axiom assertions
+  (`#guard_msgs`-pinned `#print axioms` for every headline theorem).
 - `artifact/` — the original single-file development
   (`KakeyaMultiplicativity.lean` plus the Theorem 3/4 bodies) from
   which the tree was cut. Same theorems, human-readable order; do not
