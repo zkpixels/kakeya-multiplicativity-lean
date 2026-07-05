@@ -1,8 +1,8 @@
 import itertools
 
 # ---------------------------------------------------------------
-# Verification of the two finite-free ingredients of Theorem 3 at
-# small primes: the parabola-tangent construction
+# Verification of the two ingredients of Theorem 3 at small primes:
+# the parabola-tangent construction
 #   W = {(x,y) : x^2 - y is a square} ∪ {(0,y) : y}
 # has exactly q(q+1)/2 + (q-1)/2 points and is Kakeya, and the
 # schema inequality FC(q,2,K(q,2)) holds on unions of one line per

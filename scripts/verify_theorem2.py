@@ -26,9 +26,6 @@ require(len(reps) == 13, "wrong number of direction classes")
 def add(a, b):
     return tuple((a[i] + b[i]) % 3 for i in range(3))
 
-def neg(a):
-    return tuple((-a[i]) % 3 for a_i, i in zip(a, range(3)))
-
 def line(a, d):
     return frozenset({a, add(a, d), add(a, add(d, d))})
 
@@ -51,9 +48,8 @@ def line0(d):
 # Check 1 (case B geometry): four concurrent lines through the
 # origin, in four pairwise distinct coplanar direction classes,
 # cover the whole plane spanned by those directions.  Normalized:
-# the plane is z = 0, whose direction classes have representatives
-# among the 4 plane classes; we check all 4-subsets of the 8
-# nonzero plane vectors that are pairwise non-proportional.
+# the plane is z = 0; we check all 4-subsets of the 8 nonzero
+# plane vectors that are pairwise non-proportional.
 # ---------------------------------------------------------------
 plane = frozenset(p for p in P if p[2] == 0)
 plane_dirs = [p for p in P if p[2] == 0 and p != ZERO]
@@ -118,10 +114,8 @@ print("case A endgame OK:", configs_A, "configurations")
 print("case B endgame OK:", configs_B, "configurations")
 
 # ---------------------------------------------------------------
-# Check 4 (independent, brute-force sanity on random subsets):
-# class_count(S) <= |S| on a large random sample, plus every
-# subset of size <= 5 exhaustively (fast because class_count
-# needs a line, so small sets carry few classes).
+# Check 4 (independent sanity): class_count(S) <= |S| on a large
+# random sample of subsets.
 # ---------------------------------------------------------------
 import random
 random.seed(0)

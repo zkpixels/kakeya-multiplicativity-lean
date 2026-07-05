@@ -2,7 +2,7 @@ import itertools
 
 # ---------------------------------------------------------------
 # Exhaustive verification of the two 16-point certificates:
-#   FC(4,2) at the true price K(4,2) = 10   (first prime power), and
+#   FC(4,2) at the true price K(4,2) = 10   (first proper prime power), and
 #   FC(2,4) at the true price K(2,4) = 6    (first dimension four),
 # each over the full powerset 2^16, plus explicit minimum witnesses.
 # ---------------------------------------------------------------

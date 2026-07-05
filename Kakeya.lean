@@ -1,6 +1,7 @@
 import P12Schema
 import P31AFc
 import P50BFc
+import NFcExact
 
 /-!
 Root module: building this target builds the entire verification tree
@@ -61,3 +62,23 @@ info: 'KakeyaMultiplicativity.minKakeyaSize_two_mul_dim_four' depends on axioms:
 -/
 #guard_msgs in
 #print axioms KakeyaMultiplicativity.minKakeyaSize_two_mul_dim_four
+
+/--
+info: 'KakeyaMultiplicativity.fractionalCostAt_two_three_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+-/
+#guard_msgs in
+#print axioms KakeyaMultiplicativity.fractionalCostAt_two_three_at_four
+
+/--
+info: 'KakeyaMultiplicativity.not_fractionalCostAt_two_two_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+-/
+#guard_msgs in
+#print axioms KakeyaMultiplicativity.not_fractionalCostAt_two_two_at_four
+
+/--
+info: 'KakeyaMultiplicativity.not_fractionalCostAt_two_four_at_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+-/
+#guard_msgs in
+#print axioms KakeyaMultiplicativity.not_fractionalCostAt_two_four_at_seven

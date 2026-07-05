@@ -78,6 +78,9 @@ machine — one file at a time works on a laptop.
 - `P32BBase.lean`, `P33BK00..P48BK15`, `P50BFc.lean` — the 𝔽₂⁴ cell,
   same shape, yielding `minKakeyaSize_two_four'` and the ×6 dimension-4
   law.
+- `NFcExact.lean` — both-sides exactness of the small mod-2
+  fractional-cost values (`FC(2,3,4)`, `¬FC(2,2,4)`, `¬FC(2,4,7)`
+  joining the three halves already in the main development).
 - `Kakeya.lean` — root target + build-failing axiom assertions
   (`#guard_msgs`-pinned `#print axioms` for every headline theorem).
 - `artifact/` — the original single-file development
